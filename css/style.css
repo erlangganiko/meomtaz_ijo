@@ -254,7 +254,7 @@ body {
 }
 
 .layanan-img img {
-  max-width: 220px;
+  width: 23vw;
   height: 60vh;
 }
 
@@ -590,12 +590,13 @@ body {
   z-index: 100;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
-
+/* Footer */
 .footer {
   background-color: var(--primary-color);
   color: var(--white);
   text-align: center;
   padding: 2rem 7%;
+  margin-bottom: -80px;
 }
 
 .footer .socials {
@@ -814,7 +815,7 @@ body {
   .layanan-img img {
     margin: 0 auto;
     height: 50vh;
-    width: 500px;
+    width: 40vw;
     object-fit: contain;
   }
   .layanan-content .deskripsi {
