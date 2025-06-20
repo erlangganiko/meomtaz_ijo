@@ -60,7 +60,7 @@ body {
 }
 
 .navbar .navbar-nav a:hover {
-  color: cyan;
+  color: #6a7e3d;
 }
 
 .navbar .navbar-nav a::after {
@@ -738,7 +738,7 @@ body {
   }
 
   .navbar .navbar-nav a {
-    color: var(--bg);
+    color: black;
     display: block;
     margin: 1.5rem;
     padding: 0.5rem;
