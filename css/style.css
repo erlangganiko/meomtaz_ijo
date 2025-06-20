@@ -255,7 +255,7 @@ body {
 
 .layanan-img img {
   max-width: 220px;
-  height: 50vh;
+  height: 60vh;
 }
 
 .layanan-content {
@@ -785,10 +785,6 @@ body {
 
   .features-section {
     width: 100%;
-  }
-
-  .features-list ul {
-    width: 48%;
   }
 
   .features-list li {
