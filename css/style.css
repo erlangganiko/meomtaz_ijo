@@ -564,15 +564,26 @@ body {
 }
 
 .trust-text {
-  font-size: 1.8rem;
-  margin-bottom: 2rem;
-}
+  /* Properti utama untuk border */
+  border: 2px solid var(--white); /* Garis pinggir solid berwarna putih setebal 2px */
 
+  /* Properti untuk tampilan box */
+  display: inline-block; /* Membuat box hanya selebar kontennya */
+  padding: 25px; /* Memberi jarak antara teks dan border */
+  border-radius: 15px; /* Membuat sudut box menjadi tumpul/melengkung */
+
+  /* Tambahan agar border putih terlihat jelas */
+  background-color: rgba(15, 60, 37, 0.1); /* Latar belakang semi-transparan */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Bayangan lembut di belakang box */
+}
+.trust-text p {
+  margin-bottom: 40px;
+}
 .blinking-emoji {
   animation: blink 1s linear infinite;
 }
 .blinking-emoji img {
-  width: 70px;
+  width: 30px;
   height: auto;
   display: inline-block;
   transform: rotate(30deg); /* Putar ke kiri 10 derajat */
@@ -805,13 +816,17 @@ body {
     padding: 2rem;
   }
   .layanan-img img {
-    width: 50%;
+    width: 20vw;
     max-width: 300px;
     height: auto; /* Sesuaikan height agar tidak aneh */
     margin: 0 auto 20px auto; /* Sesuaikan margin */
   }
   .deskripsi {
-    font-size: 1.6rem;
+    font-size: 1rem;
+  }
+  .simulasi-image img {
+    width: 40vw;
+    height: 40vh;
   }
 
   /* --- SLIDER ARROWS --- */
