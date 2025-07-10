@@ -151,4 +151,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Panggil Feather Icons
   feather.replace();
+
+  /// --- Fungsionalitas Tombol WhatsApp ---
+const whatsappCallIcon = document.getElementById("whatsappCallIcon");
+
+if (whatsappCallIcon) {
+  whatsappCallIcon.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    // 🔐 Nomor WA dalam base64 (sudah ada di bagian atas file)
+    const encoded = "MDgxMjIwODY5NjAz"; // 081220869603
+    const phone = atob(encoded);
+
+    // Pesan default yang akan diisi otomatis
+    const messageToSend = "Halo, saya butuh bantuan terkait produk Anda.";
+
+    // Membuka tab baru ke WhatsApp dengan pesan yang sudah diisi
+    window.open(
+      `https://wa.me/${phone}?text=${encodeURIComponent(messageToSend)}`,
+      "_blank"
+    );
+  });
+}
 });
