@@ -14,7 +14,7 @@
   /* Variabel untuk animasi scroll */
   --img-width: 150px;
   --img-gap: 30px;
-  --scroll-speed: 15s; /* Durasi animasi, bisa diubah */
+  --scroll-speed: 25s; /* Durasi animasi, bisa diubah */
 }
 * {
   margin: 0;
