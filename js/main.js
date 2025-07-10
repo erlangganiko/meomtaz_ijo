@@ -47,15 +47,14 @@ document.addEventListener("DOMContentLoaded", function () {
   // --- 3. Tombol Konsultasi WhatsApp ---
   const ctaButton = document.getElementById("cta-whatsapp");
   if (ctaButton) {
-    const waNumber = "MDgxMjIwODY5NjAz";
-    const waMessage =
-      "Halo, saya ingin konsultasi gratis mengenai maklon skincare.";
-    const encodedMessage = btoa(
-      `https://wa.me/${waNumber}?text=${encodeURIComponent(waMessage)}`
-    );
+    const waNumber = atob("MDg5NTM1MjQ0NDg4MQ==");
+    const waMessage = "Halo, saya ingin konsultasi mengenai maklon skincare.";
     ctaButton.addEventListener("click", (e) => {
       e.preventDefault();
-      window.open(atob(encodedMessage), "_blank");
+      window.open(
+        `https://wa.me/${waNumber}?text=${encodeURIComponent(waMessage)}`,
+        "_blank"
+      );
     });
   }
 
@@ -153,24 +152,24 @@ document.addEventListener("DOMContentLoaded", function () {
   feather.replace();
 
   /// --- Fungsionalitas Tombol WhatsApp ---
-const whatsappCallIcon = document.getElementById("whatsappCallIcon");
+  const whatsappCallIcon = document.getElementById("whatsappCallIcon");
 
-if (whatsappCallIcon) {
-  whatsappCallIcon.addEventListener("click", function (event) {
-    event.preventDefault();
+  if (whatsappCallIcon) {
+    whatsappCallIcon.addEventListener("click", function (event) {
+      event.preventDefault();
 
-    // 🔐 Nomor WA dalam base64 (sudah ada di bagian atas file)
-    const encoded = "MDgxMjIwODY5NjAz"; // 081220869603
-    const phone = atob(encoded);
+      // 🔐 Nomor WA dalam base64 (sudah ada di bagian atas file)
+      const encoded = "MDg5NTM1MjQ0NDg4MQ==";
+      const phone = atob(encoded);
 
-    // Pesan default yang akan diisi otomatis
-    const messageToSend = "Halo, saya butuh bantuan terkait produk Anda.";
+      // Pesan default yang akan diisi otomatis
+      const messageToSend = "Halo, saya butuh bantuan terkait produk Anda.";
 
-    // Membuka tab baru ke WhatsApp dengan pesan yang sudah diisi
-    window.open(
-      `https://wa.me/${phone}?text=${encodeURIComponent(messageToSend)}`,
-      "_blank"
-    );
-  });
-}
+      // Membuka tab baru ke WhatsApp dengan pesan yang sudah diisi
+      window.open(
+        `https://wa.me/${phone}?text=${encodeURIComponent(messageToSend)}`,
+        "_blank"
+      );
+    });
+  }
 });

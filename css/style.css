@@ -779,4 +779,11 @@ body {
   .simulasi-text {
     text-align: center;
   }
+  .blinking-emoji img {
+    width: 30px; /* atau 20px sesuai kebutuhan */
+  }
+  .trust-text {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
 }
